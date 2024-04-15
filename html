@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Music Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="survey">
+    <h1 id="title">Music Survey Form</h1>
+    <p id="description" class="italic">Let us know about your musical tastes!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">What is your name?<input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label">Your Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label">How many music genres do you consider being a fan of?<input id="number" type="number" min="0" max="100" placeholder="0"/></label>
+        <label for="dropdown">What is YOUR PERSONAL absolute favorite music genre?</label>
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Jazz</option>
+            <option value="2">JAZZ</option>
+            <option value="3">jazz</option>
+            <option value="4">jAzZ</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <label>Are you a musician?</label>
+        <label id="musician"><input id="musician" type="radio" name="person-type" class="inline" value="yes" checked/>Yes</label>
+        <label id="non-musician"><input id="non-musician" type="radio" name="person-type" class="inline" value="no"/>No</label>
+        <label id="checkbox" name="instrument" class="instrument">If yes, what instrument(s) do you play?</label>
+          <label id="guitar"><input id="guitar" class="inline" type="checkbox" name="instrument" value="guitar"/>Guitar</label>
+          <label id="piano"><input id="piano" class="inline" type="checkbox" name="instrument" value="piano">Piano</label>
+          <label id="violin"><input id="violin" class="inline" type="checkbox" name="instrument" value="violin">Violin</label>
+          <label id="kazoo"><input id="kazoo" class="inline" type="checkbox" name="instrument" value="kazoo">Kazoo</label>
+          <label id="other"><input id="other" class="inline" type="checkbox" name="instrument" value="other"/>Other...</label>
+      </fieldset>
+      <fieldset>
+        <label id="experience">Tell us about a fun experience you had with music:
+          <textarea id="experience" name="experience" rows="3" cols="30" placeholder="Write here..."></textarea>
+      </fieldset>
+      <label id="agreement">
+        <input class="inline" id="agreement" type="checkbox" name="agreement" value="agreement" required/>I accept the informations being submitted to <a href="https://ih1.redbubble.net/image.3484332254.5071/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"/>the great music master</a>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </div>
+  </body>
+</html>
